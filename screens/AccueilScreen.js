@@ -18,6 +18,8 @@ import configUrl from "../config/url.json";
 import configStyle from "../config/style";
 
 function AccueilScreen(props) {
+  console.log("test");
+
   useEffect(() => {
     AsyncStorage.getItem("code", function (error, userData) {
       if (userData) {
